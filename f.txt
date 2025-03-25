@@ -1,0 +1,133 @@
+<label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama"><br><br>
+
+                <label for="tempat_lahir">Tempat Tanggal Lahir:</label><br>
+                <input type="text" id="tempat_lahir" name="tempat_lahir">
+                <select name="tanggal">
+                <option value="">- Pilih Tanggal -</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                </select>
+                <select name="bulan">
+                <option value="">- Pilih Bulan -</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                </select>
+                <select name="tahun">
+                <option value="">- Pilih Tahun -</option>
+                <option value="1989">1989</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                </select><br><br>
+
+                <label for="agama">Agama:</label><br>
+                <select id="agama" name="agama">
+                <option value="">- PILIH -</option>
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katolik">Katolik</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Budha</option>
+                <option value="konghucu">Konghucu</option>
+                </select><br><br>
+
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" id="laki" name="jenis_kelamin" value="laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label><br><br>
+
+                <label for="no_ijazah">No. Ijazah SMA/MA:</label><br>
+                <input type="text" id="no_ijazah" name="no_ijazah"><br><br>
+
+                <label for="foto">Foto (Ukuran File Maks. 20 KB):</label><br>
+                <input type="file" id="foto" name="foto"><br><br>
+
+                <label for="nama_ayah">Nama Ayah:</label><br>
+                <input type="text" id="nama_ayah" name="nama_ayah"><br><br>
+
+                <label for="nama_ibu">Nama Ibu:</label><br>
+                <input type="text" id="nama_ibu" name="nama_ibu"><br><br>
+
+                <label for="alamat">Alamat Rumah:</label><br>
+                <textarea id="alamat" name="alamat"></textarea><br><br>
+
+                <label for="telp">No. Telp:</label><br>
+                <input type="tel" id="telp" name="telp"><br><br>
+
+                <label for="sekolah_asal">Nama Sekolah Asal:</label><br>
+                <input type="text" id="sekolah_asal" name="sekolah_asal"><br><br>
+
+                <label for="alamat_sekolah">Alamat Sekolah Asal:</label><br>
+                <input type="text" id="alamat_sekolah" name="alamat_sekolah"><br><br>
+
+                <label for="jurusan">Jurusan Dipilih:</label><br>
+                <select id="jurusan" name="jurusan">
+                <option value="">- PILIH -</option>
+                <option value="ka">Komputerisasi Akuntansi</option>
+                <option value="ab">Administrasi Bisnis</option>
+                <option value="tkk">Teknik Komputer Kontrol</option>
+                <option value="tl">Teknik Listrik</option>
+                <option value="mo">Mesin Otomotif</option>
+                <option value="tka">Perkeretaapian</option>
+                <option value="ti">Teknik Informasi</option>
+                <option value="ak">Akuntansi</option>
+                </select><br><br>
+
+                <label>Tahu informasi ini dari:</label><br>
+                <input type="checkbox" id="koran" name="info_dari[]" value="koran">
+                <label for="koran">Koran</label>
+                <input type="checkbox" id="website" name="info_dari[]" value="website">
+                <label for="website">Website</label>
+                <input type="checkbox" id="televisi" name="info_dari[]" value="televisi">
+                <label for="televisi">Televisi</label>
+                <input type="checkbox" id="radio" name="info_dari[]" value="radio">
+                <label for="radio">Radio</label>
+                <input type="checkbox" id="teman" name="info_dari[]" value="teman">
+                <label for="teman">Teman</label><br><br>
+
+                <input type="submit" value="DAFTAR">
+                <input type="reset" value="BATAL">
+            </form>
