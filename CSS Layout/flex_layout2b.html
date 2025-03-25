@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, verdana, Tahoma;
+        }
+        .header {
+            background-color: #780C28;
+            padding: 60px;
+            text-align: center;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            background-color: #6E8E59; 
+            justify-content: space-around;   
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            padding: 15px 20px;
+        }
+        .navbar a:hover{
+            color: #EAFAEA;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            height: 500px;
+        }
+        .sidebar {
+            flex: 30%;
+            background-color: #CAE0BC;
+            padding: 20px;
+
+        }
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        .gambar {
+            background-color: #EAFAEA;
+            width: 100%;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #6E8E59;
+            padding: 20px;
+            text-align: center;
+        }
+        @media screen and (max-width:700px){
+            .content .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Selamat Datang di Flex Layout</h1>
+        <p>Halaman ini di desain dengan flex</p>
+    </div>
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <h2>Ini Sidebar</h2>
+            <h5>Gambar saya</h5>
+            <div class="gambar" style="height: 10px;"></div>
+        </div>
+        <div class="main">
+            <h2>Judul Artikel</h2>
+            <h5>Tanggal, artikel</h5>
+            <div class="gambar" style="height: 10px;"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Saya uhuyyyyy</h2>
+    </div>
+</body>
+</html>

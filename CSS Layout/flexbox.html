@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Model</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color: blanchedalmond;
+            flex-flow: row-reverse wrap;
+            justify-content: space-evenly;
+        }  
+        .wadah_flex > div {
+            background-color: #7e32e2;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>Kesimpulan Skenario 1 adalah : <br>
+        Pada skenario 1 ini, terdapat 3 elemen div yang berada dalam satu kontainer flex. Ketiga elemen div tersebut akan menempati satu baris secara horizontal. Hal ini dikarenakan display: flex pada kontainer wadah_flex. Selain itu, background-color: blanchedalmond; pada elemen-elemen div tersebut akan memberikan warna latar belakang pada ketiga elemen div tersebut.</p>
+    <p>Kesimpulan Skenario 2 adalah : <br>
+        Pada skenario 2 ini, tampilan elemen div akan berubah menjadi berjarak 10px antar elemen div. Hal ini dikarenakan margin: 10px; pada elemen div tersebut. Selain itu, padding: 20px; pada elemen div tersebut akan memberikan jarak antara teks dengan batas elemen div. Selain itu, font-size: 30px; pada elemen div tersebut akan memberikan ukuran teks pada elemen div tersebut.</p>
+    <p>Kesimpulan Skenario 3 adalah : <br>
+        Pada skenario 3 ini, tata letak elemen div akan berubah susunan karena penggunaan style flex-direction, berikut perbedaan setiap nilainya :<br>
+        1. flex-direction: row; akan membuat elemen div berada dalam satu baris secara horizontal.<br>
+        2. flex-direction: row-reverse; akan membuat elemen div berada dalam satu baris secara horizontal dengan urutan terbalik.<br>
+        3. flex-direction: column; akan membuat elemen div berada dalam satu kolom secara vertikal.<br>
+        4. flex-direction: column-reverse; akan membuat elemen div berada dalam satu kolom secara vertikal dengan urutan terbalik.<br>
+    </p>
+    <p>Kesimpulan Skenario 4 adalah : <br>
+        Pada skenario 4 ini, tata letak elemen div akan berubah susunan karena kali ini menggunakan style flex-wrap, berikut perbedaan setiap nilainya :<br>
+        1. flex-wrap: nowrap; akan membuat elemen div berada dalam satu baris secara horizontal.<br>
+        2. flex-wrap: wrap; akan membuat elemen div berada dalam satu baris secara horizontal dengan pindah baris jika elemen div tidak muat.<br>
+        3. flex-wrap: wrap-reverse; akan membuat elemen div berada dalam satu baris secara horizontal dengan urutan terbalik.<br></p>
+    <p>Kesimpulan Skenario 5 adalah : <br>
+        Pada skenario 5 ini, tata letak elemen div akan berubah susunan karena kali ini menggunakan style flex-flow dimana digunakan untuk menggabungkan flex-direction dan flex-wrap, berikut 3 contoh yang saya gunakan sebagai contoh :<br>
+        1. flex-flow: row wrap; akan membuat elemen div berada dalam satu baris secara horizontal dengan pindah baris jika elemen div tidak muat.<br>
+        2. flex-flow: row-reverse wrap; akan membuat elemen div berada dalam satu baris secara horizontal dengan urutan terbalik dan pindah baris jika elemen div tidak muat.<br>
+        3. flex-flow: column wrap; akan membuat elemen div berada dalam satu kolom secara vertikal dengan pindah baris jika elemen div tidak muat.<br></p>
+    <p>Kesimpulan Skenario 6 adalah : <br>
+        Pada skenario 6 ini, tata letak elemen div akan berubah susunan karena kali ini menggunakan style justify-content, berikut perbedaan setiap nilainya :<br>
+        1. justify-content: flex-start; akan membuat elemen div berada di sebelah kiri.<br>
+        2. justify-content: flex-end; akan membuat elemen div berada di sebelah kanan.<br>
+        3. justify-content: center; akan membuat elemen div berada di tengah.<br>
+        4. justify-content: space-between; akan membuat elemen div berada di sebelah kiri dan kanan.<br>
+        5. justify-content: space-around; akan membuat elemen div berada di sebelah kiri dan kanan dengan jarak yang sama.<br>
+        6. justify-content: space-evenly; akan membuat elemen div berada di sebelah kiri dan kanan dengan jarak yang sama dan elemen div di tengah.<br></p>
+</body>
+</html>

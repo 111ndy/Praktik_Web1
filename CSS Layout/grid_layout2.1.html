@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+        }
+        .item1 {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            grid-column: 3 / 7;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+        <div class="item1">4</div>
+        <div class="item1">5</div>
+        <div class="item1">6</div>
+        <div class="item1">7</div>
+        <div class="item1">8</div>
+    </div>
+    <div> Kesimpulan : <br>
+        Kode program pada grid_layout2.html, menunjukkan penggunaan grid-template-column yang berfungsi untuk menentukan jumlah kolom pada grid. Pada kode program tersebut, terdapat 4 kolom yang akan menempati satu baris secara horizontal. Grid-gap: 50px; akan memberikan jarak antara elemen-elemen div tersebut sebesar 50px. Background-color: #2196F3; akan memberikan warna latar belakang pada elemen-elemen div tersebut.
+    </div><br>
+    <div>Skenario 1 : <br>
+        Pada skenario ini, pengubahan beberapa nilai grid-row pada elemen div, dimana : <br>
+        1. grid-row: 1 / 4; akan membuat elemen div tersebut dimulai dari baris ke-1 dan berakhir di baris ke-4. <br>
+        2. grid-row: 2 / 6; akan membuat elemen div tersebut dimulai dari baris ke-2 dan berakhir di baris ke-6. <br>
+        3. grid-row: 9 / 1; akan membuat elemen div tersebut dimulai dari baris ke-9 dan berakhir di baris ke-1.
+    </div> <br>
+    <div>Skenario 2 : <br>
+        Pada skenario ini, pengubahan beberapa nilai grid-column pada elemen div, dimana : <br>
+        1. grid-column: 1 / 4; akan membuat elemen div tersebut dimulai dari kolom ke-1 dan berakhir di kolom ke-4. <br>
+        2. grid-column: 1 / 6; akan membuat elemen div tersebut dimulai dari kolom ke-1 dan berakhir di kolom ke-6. <br>
+        3. grid-column: 3 / 7; akan membuat elemen div tersebut dimulai dari kolom ke-3 dan berakhir di kolom ke-7. <br>
+    </div>
+</body>
+</html>

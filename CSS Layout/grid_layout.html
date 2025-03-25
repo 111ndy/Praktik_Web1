@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Belajar CSS Grid Box</title>
+    <style>
+        .tempat_grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-gap: 50px;
+        }
+        .item_grid {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tampilan :</h1>
+    <div class="tempat_grid">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+        <div>Kesimpulan Skenario 1 adalah : <br>
+            Pada skenario ini, terdapat 9 elemen div yang berada dalam satu kontainer grid. Ketiga elemen div tersebut akan menempati satu baris secara horizontal. Hal ini dikarenakan display: grid pada kontainer tempat_grid. Selain itu, background-color: #2196F3; yang akan memberikan warna latar belakang pada elemen-elemen div tersebut. Selain itu, grid-template-columns: auto auto auto; pada elemen-elemen div tersebut akan memberikan ukuran kolom pada elemen-elemen div tersebut.
+        </div><br>
+        <div>Skenario 3 : <br>
+            Pada skenario ini, tata letak elemen div akan berubah susunan karena penggunaan style grid-column-gap dan grid-row-gap, berikut perbedaan setiap nilainya :<br>
+            1. grid-column-gap: 100px; akan memberikan jarak antara kolom sebesar 100px.<br>
+            2. grid-row-gap: 50px; akan memberikan jarak antara baris sebesar 50px.</div><br>
+        <div>Skenario 4 : <br>
+            pada skenario ini, penggunaan style grid-column-gap dan grid-row-gap diubah menjadi grid-gap: 50px; yang berfungsi untuk memberikan jarak antara kolom dan baris sebesar 50px.</div><br>
+        
+    </div>
+</body>
+</html>
