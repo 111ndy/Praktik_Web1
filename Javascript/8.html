@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <button id="tombolSapa">Sapa !</button>
+  <div id="pesan"></div>
+  <script>
+    $(document).ready(function() {
+      $("#tombolSapa").click(function() {
+        $("#pesan").text("Halo !");
+      });
+    });
+  </script>
+</body>
+</html>

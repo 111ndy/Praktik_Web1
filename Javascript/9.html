@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu dengan jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    ul.menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    ul.menu li {
+      display: inline;
+    }
+
+    ul.menu li a {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    ul.submenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+      position: absolute;
+      background-color: #ddd;
+      border: 1px solid #ccc;
+    }
+
+    ul.menu li:hover > ul.submenu {
+      display: block;
+    }
+
+    ul.submenu li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<ul class="menu">
+  <li><a href="#">Beranda</a></li>
+  <li>
+    <a href="#">Produk</a>
+    <ul class="submenu">
+      <li><a href="#">Elektronik</a></li>
+      <li><a href="#">Pakaian</a></li>
+      <li><a href="#">Buku</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Tentang Kami</a></li>
+  <li><a href="#">Kontak</a></li>
+</ul>
+
+<script>
+  $(document).ready(function() {
+    // Efek hover sederhana (opsional)
+    $(".menu a").hover(function() {
+      $(this).css("background-color", "#ccc");
+    }, function() {
+      $(this).css("background-color", "");
+    });
+
+    $(".submenu a").hover(function() {
+      $(this).css("background-color", "#eee");
+    }, function() {
+      $(this).css("background-color", "");
+    });
+  });
+</script>
+
+</body>
+</html>
