@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dialog dengan Progressbar jQuery UI</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <style>
+    #download-dialog {
+      display: none;
+    }
+    #progressbar {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="mulai-download">Mulai Download</button>
+
+  <div id="download-dialog" title="Mengunduh File...">
+    <p>Mengunduh file. Mohon tunggu...</p>
+    <div id="progressbar"></div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#download-dialog").dialog({
+        autoOpen: false,
+        modal: true,
+        closeOnEscape: false,
+        open: function(event, ui) {
+          $("#progressbar").progressbar({
+            value: false
+          });
+          setTimeout(function() {
+            $("#progressbar").progressbar("value", 100)
+            $("#download-dialog").dialog("option", "buttons", {
+              "Selesai": function() {
+                $(this).dialog("close");
+              }
+            });
+            $("#download-dialog p").text("Download selesai!");
+          }, 3000); //
+        },
+        buttons: {} //
+      });
+
+      $("#mulai-download").click(function() {
+        $("#download-dialog").dialog("open");
+      });
+    });
+  </script>
+
+</body>
+</html>

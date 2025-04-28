@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dialog Dasar jQuery UI</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <style>
+    #dialog-basic {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="buka-dialog">Buka Dialog</button>
+
+  <div id="dialog-basic" title="Dialog Dasar">
+    <p>Ini adalah jendela dialog dasar menggunakan jQuery UI.</p>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#dialog-basic").dialog({
+        autoOpen: false,
+        modal: true,
+          "OK": function() {
+            $(this).dialog("close");
+          }
+        }
+      });
+
+      $("#buka-dialog").click(function() {
+        $("#dialog-basic").dialog("open");
+      });
+    });
+  </script>
+
+</body>
+</html>
